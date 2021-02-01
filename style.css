@@ -18,9 +18,15 @@ header {
     height: 50px;
     background-color: #ff8030;
     display: grid;
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: 10% 60% 10%;
+    justify-content: space-between;
     grid-template-areas: "voltar logo sair";
     align-items: center;
+}
+
+.header button {
+    background: none;
+    border: none;
 }
 
 .logo-img {
@@ -61,4 +67,8 @@ header {
     font-size: 12px;
     text-align: center;
     margin: 7px 50px 0 50px;
+}
+
+.none {
+    display: none;
 }
