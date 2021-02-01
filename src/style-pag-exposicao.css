@@ -18,6 +18,11 @@
     display: none;
 }
 
+.sair-button {
+    cursor: not-allowed;
+    pointer-events:none;
+}
+
 .exposicao-header {
     text-align: center;
     margin: 0 15px;
