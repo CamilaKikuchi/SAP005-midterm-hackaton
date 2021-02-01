@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style-pag-inicial.css"/>
     <link rel="stylesheet" href="style-pag-exposicao.css"/>
     <link rel="stylesheet" href="style-pag-bilhete.css"/>
+    <link rel="stylesheet" href="style-pag-quiz.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Chilanka&display=swap" rel="stylesheet">
     
   </head>
@@ -57,7 +58,7 @@
           </main>
         </section>
 
-        <section class="tela-bilhete-prateado">
+        <!-- <section class="tela-bilhete-prateado">
           <main>
             <div class="tela-bilhete-prateado">
               <img src="./images/bilhete-prateado.png" alt="bilhete-prateado" class="bilhete-img" />
@@ -71,19 +72,52 @@
         <section class="tela-bilhete-dourado">
           <main>
             <div class="tela-bilhete-dourado">
-              <p class="bilhete-dourado-texto">Printe seu segundo bilhete e compartilhe a experiência com seus amigos!</p>
-              <p class="bilhete-dourado-texto-italico">Não esqueça de convidá-los para jogar também!</p>
+              <p class="texto-bilhete-dourado"><b>VOCÊ CONCLUIU A TOUR!</b></p>
+              <p class="texto-bilhete-dourado">Printe seu segundo bilhete e compartilhe a experiência com seus amigos!</p>
+              <p class="texto-bilhete-dourado"><i>Não esqueça de convidá-los para jogar também!</i></p>
               <img src="./images/bilhete-dourado.png" alt="bilhete-dourado" class="bilhete-img" />
-              <p class="texto-bilhete-dourado"><b class="volte-sempe">Volte Sempre!</b></p>
+              <p class="bilhete-dourado-volte-sempre"><b>Volte Sempre!</b></p>
             </div>
           </main>
-        </section>
-
-        <!-- <section class="tela-quiz">
-          <main>
-
-          </main>
         </section> -->
+
+        <section class="tela-quiz">
+          <main>
+            <p class="numeracao-perguntas">Pergunta X de 4</p>
+            <p class="quiz-pergunta">A pergunta vai ser inserida nesse parágrafo</p>
+            <img src="https://uploads2.wikiart.org/images/candido-portinari/scarecrow-1959.jpg" alt="imagem-quiz" class="quiz-img" />
+            
+            <ul class="opcoes-resposta">
+              <li class="opcao-a">
+                <input type="checkbox" id="opcao-a" name="opcao-a">
+                <label for="opcao-a">Primeira Opção</label>
+              </li>
+              <li class="opcao-b">
+                <input type="checkbox" id="opcao-b" name="opcao-b">
+                <label for="opcao-b">Segunda Opção</label>
+              </li>
+              <li class="opcao-c">
+                <input type="checkbox" id="opcao-c" name="opcao-c">
+                <label for="opcao-c">Terceira Opção</label>
+              </li>
+              <li class="opcao-d">
+                <input type="checkbox" id="opcao-d" name="opcao-d">
+                <label for="opcao-d">Quarta Opção</label>
+              </li>
+            </ul>
+
+            <div class="tente-novamente">
+              <p class="erro">Ainda não foi dessa vez...</p>
+              <button class="tente-novamente-button">Tente novamente!</button>
+            </div>
+            
+            <div class="acertou">
+              <p class="texto-voce-acertou">Você acertou!</p>
+            </div>
+
+            <button class="prox-pergunta">Próxima pergunta</button>
+          </main>
+        </section>
 
         <footer class="footer">
           <p>Projeto desenvolvido por: Ana Clara, Camila, Karine, Mairã, Priscila e Rebeca.</p>
