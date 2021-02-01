@@ -1,5 +1,4 @@
 .tela-exposicao {
-    display: none;
     width: 100%;
     background-image: url("./images/Imagem-fundo-sem-museu.png");
     background-position: center bottom; 
@@ -9,6 +8,14 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.voltar-img {
+    display: block;
+}
+
+.sair-img {
+    display: none;
 }
 
 .exposicao-header {
