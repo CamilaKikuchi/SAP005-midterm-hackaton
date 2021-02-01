@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chilanka', cursive;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.footer {
+    margin-top: -40px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    align-self: flex-end;
+    display: flex;
+}
+
+.footer p {
+    font-family: 'Chilanka', cursive;
+    font-size: 12px;
+    text-align: center;
+    margin: 7px 50px 0 50px;
+}
