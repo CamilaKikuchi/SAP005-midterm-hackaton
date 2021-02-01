@@ -12,20 +12,6 @@
     -o-background-size: cover;
 }
 
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    background-color: #ff8030;
-}
-
-.logo-img {
-    width: 50%;
-    height: 50%;
-    margin: 0 15px;
-}
-
 .sair {
     margin: 0 15px;
 }
