@@ -2,10 +2,13 @@ const firstPageButton = document.getElementById("button-input-nome");
 const nameInput = document.getElementById("input-nome");
 const pagInicial = document.getElementById("tela-inicial");
 const pagExposicao = document.getElementById("tela-exposicao");
+const pagQuiz = document.getElementById("tela-quiz");
 const formPagInicial = document.getElementById("form-pag-inicial");
 const headerNomeUser = document.getElementById("header-nome-usuario");
 const expoButtonToTicketPage = document.getElementById("button-pag-ticket");
 const pagBilhetePrateado = document.getElementById("tela-bilhete-prateado");
+const pagBilheteDourado = document.getElementById("tela-bilhete-dourado");
+const buttonToQuizPage = document.getElementById("button-iniciar-quiz");
 const sairButton = document.getElementById("sair-button");
 const voltarButton = document.getElementById("voltar-button");
 const msgErro = document.createElement("p");
@@ -13,6 +16,8 @@ const msgErro = document.createElement("p");
 sairButton.addEventListener('click', () => {
     pagInicial.classList.remove('none');
     pagBilhetePrateado.classList.add('none');
+    pagQuiz.classList.add('none');
+    pagBilheteDourado.classList.add('none');
     sairButton.classList.add('none');
     voltarButton.classList.add('none');
     nameInput.value = "";
@@ -52,5 +57,12 @@ expoButtonToTicketPage.addEventListener('click', () => {
     pagExposicao.classList.add("none");
     pagBilhetePrateado.classList.remove("none");
     sairButton.classList.remove("none");
+    window.scrollTo(0,0);
+});
+
+buttonToQuizPage.addEventListener('click', () => {
+    pagBilhetePrateado.classList.add("none");
+    pagQuiz.classList.remove('none');
+    voltarButton.classList.add('none');
     window.scrollTo(0,0);
 });
