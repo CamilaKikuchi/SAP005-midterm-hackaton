@@ -3,6 +3,8 @@ document.getElementById('button-iniciar-quiz').addEventListener('click', functio
 	primeiraPergunta();
 });
 
+import getImageURLObrasEscolhidas from "./main.js"
+
 //Página questão 1
 function primeiraPergunta() {
 	let divUm = document.getElementById('div1');
@@ -10,7 +12,7 @@ function primeiraPergunta() {
 	<div class='pergunta'>
 		<p>Quem pintou a obra ‘Abaporu’?</p>
 	</div>
-	<img src="images/abaporu.jpg" alt="Abaporu" class='obra-quiz-img'>
+	<img src="${getImageURLObrasEscolhidas("Abaporu")}" alt="Abaporu" class='obra-quiz-img'>
 	<div class="btnsResposta">
 		<button id='bt1' class='bt1' value="errado">Pedro Américo</button>
 		<button id='bt2' class='bt2' value="errado">Beatriz Milhazes</button>
@@ -40,7 +42,7 @@ function segundaPergunta() {
 	<div class='pergunta'>
 		<p>O Bumba meu Boi é uma tradicional festa de qual estado?</p>
 	</div>
-    <img src="images/bumba-meu-boi.jpg" alt="Bumba meu Boi" class='obra-quiz-img'>
+    <img src="${getImageURLObrasEscolhidas("Bumba meu Boi")}" alt="Bumba meu Boi" class='obra-quiz-img'>
     <div class="btnsResposta">
 		<button id='bt1' class='bt1' value="errado">Rio Grande do Norte</button>
 		<button id='bt2' class='bt2' value="correto">Maranhão</button>
@@ -70,7 +72,7 @@ function terceiraPergunta() {
 	<div class='pergunta'>
 		<p>Qual artista plástico é conhecido por pintar bandeirinhas?</p>
 	</div>
-	<img src="images/grande-fachada-festiva.jpg" alt="Grande Fachada Festiva" class='obra-quiz-img'>
+	<img src="${getImageURLObrasEscolhidas("Grande fachada festiva")}" alt="Grande Fachada Festiva" class='obra-quiz-img'>
 	<div class="btnsResposta">
 		<button id='bt1' class='bt1' value="errado">Aldemir Martins</button>
 		<button id='bt2' class='bt2' value="correto">Alfredo Volpi</button>
@@ -100,7 +102,7 @@ function quartaPergunta() {
 	<div class='pergunta'>
 		<p>Nas margens de qual rio,<br> Dom Pedro I declarou a independência?</p>
 	</div>
-	<img src="images/independencia.jpg" alt="Independência ou Morte!" class='obra-quiz-img'>
+	<img src="${getImageURLObrasEscolhidas("Independence or Death! (The Ipiranga Shout)")}" alt="Independência ou Morte!" class='obra-quiz-img'>
 	<div class="btnsResposta">
 		<button id='bt1' class='bt1' value="correto">Rio Ipiranga</button>
 		<button id='bt2' class='bt2' value="errado">Rio Tiete</button>
