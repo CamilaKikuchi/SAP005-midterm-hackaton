@@ -15,6 +15,11 @@
     font-family: 'Chilanka', cursive;
     height: 40px;
     width: 75%;
+
+.prox-pergunta {
+    font-family: 'Chilanka', cursive;
+    text-align: center;
+
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
@@ -22,3 +27,47 @@
     border: 1px solid #ff8030;
     box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
 }
+
+
+.tente-novamente-button {   
+    font-family: 'Chilanka', cursive;
+    align-self: start;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ff8030;
+    border: 1px solid #ff8030;
+    box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.opcoes-resposta {
+    text-align: center;
+    list-style-type: none;
+}
+
+.tente-novamente {
+    text-align: center;
+}
+
+.acertou {
+    text-align: center;
+}
+
+.prox-pergunta{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz-pergunta {
+    text-align: center;
+}
+
+.quiz-img {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
