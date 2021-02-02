@@ -29,27 +29,30 @@ header {
     border: none;
 }
 
-.logo-img {
+.logo-button {
     grid-area: logo;
     display: inline-block;
+}
+
+.voltar-button {
+    grid-area: voltar;
+    display: inline-block;
+}
+
+.sair-button {
+    grid-area: sair;
+    display: inline-block;
+}
+
+.logo-img {
     margin: 0 auto;
     width: auto;
     height: 30px;
 }
 
-.voltar-img {
-    grid-area: voltar;
-    display: inline-block;
+.voltar-img, .sair-img {
     margin: 0 auto;
     height: 20px;
-}
-
-.sair-img {
-    grid-area: sair;
-    display: inline-block;
-    margin: 0 auto;
-    height: 20px;
-    margin: 0 15px;
 }
 
 .footer {

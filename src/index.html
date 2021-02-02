@@ -16,9 +16,9 @@
   <body>
     <div class="root">
         <header class="header">
-          <button class="voltar-button"><img alt="Voltar" src=".\images\back.png" class="voltar-img" /></button>
+          <button class="voltar-button none" id="voltar-button"><img alt="Voltar" src=".\images\back.png" class="voltar-img" /></button>
           <button class="logo-button"><img alt="Logo" src=".\images\logo.png" class="logo-img" /></button>
-          <button class="sair-button"><img alt="Sair" src=".\images\sair.png" class="sair-img" /></button>
+          <button class="sair-button none" id="sair-button"><img alt="Sair" src=".\images\sair.png" class="sair-img" /></button>
         </header>
 
         <section class="tela-inicial" id="tela-inicial">
@@ -37,29 +37,18 @@
               <p>Preste bem atenção na exposição <br><b>"ESSE É O MEU BRASIL"!</b></p>
               <p>No fim da tour testaremos seus conhecimentos com um <b>SUPER QUIZ!</b></p>
             </section>
-            <ul class="obras">
-              <li>
-                <img alt="Obra1" src="https://uploads4.wikiart.org/images/tarsila-do-amaral/abaporu-1928(1).jpg!Large.jpg" class="obra-img" />
-                <p>Nome da Obra (data)</p>
-                <p>Nome do Artista</p>
-              </li>
-              <li>
-                <img alt="Obra1" src="https://uploads0.wikiart.org/00210/images/pedro-americo/independence-of-brazil-1888.jpg!Large.jpg" class="obra-img" />
-                <p>Nome da Obra (data)</p>
-                <p>Nome do Artista</p>
-              </li>
-            </ul>
+            <ul class="obras" id="lista-obras"></ul>
             <section class="exposicao-button">
               <p>Parabéns, você terminou a exposição!</p>
               <p>Seu ticket está sendo criado...</p>
-              <button class="button-pag-ticket">Clique aqui para retirar</button>
+              <button class="button-pag-ticket" id="button-pag-ticket">Clique aqui para retirar</button>
             </section>
           </main>
         </section>
 
-        <section class="tela-bilhete-prateado none">
+        <section class="tela-bilhete-prateado none" id="tela-bilhete-prateado">
           <main>
-            <section class="bilhete-prateado none">
+            <section class="bilhete-prateado">
               <img src="./images/bilhete-prateado.png" alt="bilhete-prateado" class="bilhete-img" />
               <p class="texto-bilhete-prateado">Agora vamos atrás do bilhete <b class="dourado">dourado!</b></p>
               <p class="texto-bilhete-prateado-italico"><i><u>Não esqueça</u> de printar seu ticket antes de seguir!</i></p>
@@ -123,7 +112,8 @@
         </footer>
     </div>
 
-    <script src="main.js" type="module"></script>
+    <script src="main.js"></script>
+    <script src="page-routes.js"></script>
   
   </body>
 </html>

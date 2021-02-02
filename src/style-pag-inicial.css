@@ -11,16 +11,6 @@
     -o-background-size: cover;
 }
 
-.sair-img, .voltar-img {
-    display: none;
-}
-
-.sair-button, .voltar-button {
-    display: none;
-    cursor: not-allowed;
-    pointer-events:none;
-}
-
 .form-pag-inicial {
     display: flex;
     flex-direction: column;
