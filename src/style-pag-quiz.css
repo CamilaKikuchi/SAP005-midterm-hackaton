@@ -1,6 +1,7 @@
+
 .tela-quiz {
     width: 100%;
-    background-image: url("./images/Imagem-fundo-sem-museu-pergunta.png");
+    background-image:url("./images/Imagem-fundo-sem-museu.png");
     background-position: center bottom; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
@@ -8,4 +9,16 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.btn-next {
+    font-family: 'Chilanka', cursive;
+    height: 40px;
+    width: 75%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ff8030;
+    border: 1px solid #ff8030;
+    box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
 }
