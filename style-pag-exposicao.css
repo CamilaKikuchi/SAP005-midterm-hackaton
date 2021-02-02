@@ -10,19 +10,6 @@
     -o-background-size: cover;
 }
 
-.voltar-img {
-    display: block;
-}
-
-.sair-img {
-    display: none;
-}
-
-.sair-button {
-    cursor: not-allowed;
-    pointer-events:none;
-}
-
 .exposicao-header {
     text-align: center;
     margin: 0 15px;
@@ -48,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #ff8030;
+    border-bottom: 3px solid #ff8030;
     padding-bottom: 25px;
 }
 
@@ -59,6 +46,7 @@
 
 .obras li p {
     margin:0;
+    text-align: center;
 }
 
 .exposicao-button {

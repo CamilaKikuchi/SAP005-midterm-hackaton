@@ -1,20 +1,33 @@
-const firstPageButton = document.getElementById("button-input-nome");
-const nameInput = document.getElementById("input-nome");
-const pagInicial = document.getElementById("tela-inicial");
-const pagExposicao = document.getElementById("tela-exposicao");
-const formPagInicial = document.getElementById("form-pag-inicial");
-const headerNomeUser = document.getElementById("header-nome-usuario");
+const obrasEscolhidas = [];
+const data = "https://thingproxy.freeboard.io/fetch/";
+const urls = [
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=tarsila-do-amaral-Abaporu",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=tarsila-do-amaral-Morro-da-favela",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=o-grito-do-ipiranga",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=candido-portinari-Futebol",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=tarsila-do-amaral-a-cuca",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=aldemir-martins-Bumba-meu-Boi",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=morro-vermelho-lasar-segall",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=girl-with-the-gas-mask",
+    "https://www.wikiart.org/en/api/2/PaintingSearch?term=volpi-grande-fachada-festiva"
+]
 
-firstPageButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    if(nameInput.value !== ""){
-        pagInicial.classList.add("none");
-        pagExposicao.classList.remove("none");
-        headerNomeUser.innerHTML = `<b>Olá, ${nameInput.value}!</b>`
-    } else {
-        const msgErro = document.createElement("p");
-        msgErro.innerText = "Você deve fornecer o seu nome para continuar!"
-        formPagInicial.appendChild(msgErro);
-    }
-})
+let obrasPaginated = "";
+const listaDeObras = document.getElementById("lista-obras");
 
+const promises = urls.map(url => fetch(data+url).then(response => response.json()));
+Promise.all(promises).then(allData => allData.map(obra => {
+    obrasEscolhidas.push(obra.data[0]);
+
+    let dadosDaObra = obra.data[0];
+
+    obrasPaginated += `
+        <li>
+            <img src="${dadosDaObra.image}" alt="${dadosDaObra.artistUrl}-${dadosDaObra.title}" class="obra-img" />
+            <p>${dadosDaObra.title} (${dadosDaObra.completitionYear})</p>
+            <p>${dadosDaObra.artistName}</p>
+        </li>
+    `
+
+    listaDeObras.innerHTML = obrasPaginated;
+}));
