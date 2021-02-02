@@ -14,14 +14,14 @@ Projeto desenvolvido durante o Midterm Hackton do Bootcamp da Laboratória. Ness
 
 - [1. Apresentação do Projeto](#1-apresentação-do-projeto)
   - [1.1 Como utilizar a aplicação](#1.1-como-utilizar-a-aplicação)
-- [2. Desenvolvedoras](#2-desenvolvedoras)
-- [3. Planejamento](#3-planejamento)
-- [4. Desenvolvimento](#4-desenvolvimento)
-  - [4.1 Histórias de Usuário](#4.1-histórias-de-usuário)
-  - [4.2 Proto personas](#4.2-proto-personas)
-  - [4.3 Mínimo Produto Viável](#4.3-mínimo-produto-viável)
-  - [4.4 Protótipos](#4.4-protótipos)
-- [5. Habilidades Desenvolvidas](#5-habilidades-desenvolvidas)
+- [2. Planejamento](#2-planejamento)
+- [3. Desenvolvimento](#4-desenvolvimento)
+  - [3.1 Problema a ser resolvido](#3.1-problema-a-ser-resolvido) 
+  - [3.2 Histórias de Usuário](#3.2-histórias-de-usuário)
+  - [3.3 Mínimo Produto Viável](#3.3-mínimo-produto-viável)
+  - [3.4 Protótipos](#3.4-protótipos)
+- [4. Habilidades Desenvolvidas](#4-habilidades-desenvolvidas)  
+- [5. Desenvolvedoras](#5-desenvolvedoras)
 
 ---
 
