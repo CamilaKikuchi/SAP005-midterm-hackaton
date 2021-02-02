@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 const obrasEscolhidas = [];
-const data = "https://thingproxy.freeboard.io/fetch/";
+// const data = "https://thingproxy.freeboard.io/fetch/";
+const data = "https://api.allorigins.win/get?url=";
 const urls = [
     "https://www.wikiart.org/en/api/2/PaintingSearch?term=tarsila-do-amaral-Abaporu",
     "https://www.wikiart.org/en/api/2/PaintingSearch?term=tarsila-do-amaral-Morro-da-favela",
@@ -56,9 +57,9 @@ function frase(nomeDaObra) {
 
 const promises = urls.map(url => fetch(data+url).then(response => response.json()));
 Promise.all(promises).then(allData => allData.map(obra => {
-    obrasEscolhidas.push(obra.data[0]);
-
-    let dadosDaObra = obra.data[0];
+    let dadosDaObra = JSON.parse(obra.contents).data[0];
+    obrasEscolhidas.push(dadosDaObra);
+    
 
     obrasPaginated += `
         <li>
