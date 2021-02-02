@@ -60,7 +60,6 @@ Promise.all(promises).then(allData => allData.map(obra => {
     let dadosDaObra = JSON.parse(obra.contents).data[0];
     obrasEscolhidas.push(dadosDaObra);
     
-
     obrasPaginated += `
         <li>
             <img src="${dadosDaObra.image}" alt="${dadosDaObra.artistUrl}-${dadosDaObra.title}" class="obra-img" />
@@ -72,3 +71,13 @@ Promise.all(promises).then(allData => allData.map(obra => {
 
     listaDeObras.innerHTML = obrasPaginated;
 }));
+
+function getImageURLObrasEscolhidas(nomeDaObra) {
+    for (let obra of obrasEscolhidas) {
+        if(obra.title === nomeDaObra){
+            return obra.image
+        }
+    }
+}
+
+export default getImageURLObrasEscolhidas;
