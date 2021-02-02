@@ -33,6 +33,11 @@
     width: 90%;
 }
 
+.bilhete-dourado-img {
+    margin-top: 15px;
+    width: 90%;
+}
+
 .texto-bilhete-prateado {
     font-size: 18px;
     margin: 15px 0 10px 0;
@@ -63,4 +68,11 @@
 .bilhete-dourado-volte-sempre {
     font-size: 24px;
     margin: 10px 0 55px 0;
+}
+
+@media only screen and (min-device-width: 1200px){
+    .bilhete-img {
+        margin-top: 65px;
+        width: 25%;
+    }
 }
