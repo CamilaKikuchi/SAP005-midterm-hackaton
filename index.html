@@ -1,130 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museu</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="style-pag-inicial.css"/>
-    <link rel="stylesheet" href="style-pag-exposicao.css"/>
-    <link rel="stylesheet" href="style-pag-bilhete.css"/>
-    <link rel="stylesheet" href="style-pag-quiz.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Chilanka&display=swap" rel="stylesheet">
-    
-  </head>
 
-  <body>
-    <div class="root">
-        <header class="header">
-          <div class="logo">
-            <!-- <img alt="Logo" src=".\images\logo-lab.png" class="logo-img" /> -->
-            <p class="sair">Sair</p>
-          </div>
-        </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-pag-inicial.css" />
+  <link rel="stylesheet" href="style-pag-exposicao.css" />
+  <link rel="stylesheet" href="style-pag-bilhete.css" />
+  <link rel="stylesheet" href="style-pag-quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Chilanka&display=swap" rel="stylesheet">
 
-        <section class="tela-inicial">
-          <main>
-            <form class="form-pag-inicial">
-              <input class="input-nome" type="text" name="nome" placeholder="Escreva seu nome para começar :)" />
-              <button class="button-input-nome">INICIAR TOUR</button>
-            </form>
-          </main>
+</head>
+
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="logo">
+        <!-- <img alt="Logo" src=".\images\logo-lab.png" class="logo-img" /> -->
+        <p class="sair">Sair</p>
+      </div>
+    </header>
+
+    <section class="tela-inicial">
+      <main>
+        <form class="form-pag-inicial">
+          <input class="input-nome" type="text" name="nome" placeholder="Escreva seu nome para começar :)" />
+          <button class="button-input-nome">INICIAR TOUR</button>
+        </form>
+      </main>
+    </section>
+
+    <section class="tela-exposicao">
+      <main>
+        <section class="exposicao-header">
+          <p><b>Olá, [nome]!</b></p>
+          <p>Preste bem atenção na exposição <br><b>"ESSE É O MEU BRASIL"!</b></p>
+          <p>No fim da tour testaremos seus conhecimentos com um <b>SUPER QUIZ!</b></p>
         </section>
-
-        <section class="tela-exposicao">
-          <main>
-            <section class="exposicao-header">
-              <p><b>Olá, [nome]!</b></p>
-              <p>Preste bem atenção na exposição <br><b>"ESSE É O MEU BRASIL"!</b></p>
-              <p>No fim da tour testaremos seus conhecimentos com um <b>SUPER QUIZ!</b></p>
-            </section>
-            <ul class="obras">
-              <li>
-                <img alt="Obra1" src="https://uploads4.wikiart.org/images/tarsila-do-amaral/abaporu-1928(1).jpg!Large.jpg" class="obra-img" />
-                <p>Nome da Obra (data)</p>
-                <p>Nome do Artista</p>
-              </li>
-              <li>
-                <img alt="Obra1" src="https://uploads0.wikiart.org/00210/images/pedro-americo/independence-of-brazil-1888.jpg!Large.jpg" class="obra-img" />
-                <p>Nome da Obra (data)</p>
-                <p>Nome do Artista</p>
-              </li>
-            </ul>
-            <section class="exposicao-button">
-              <p>Parabéns, você terminou a exposição!</p>
-              <p>Seu ticket está sendo criado...</p>
-              <button class="button-pag-ticket">Clique aqui para retirar</button>
-            </section>
-          </main>
+        <ul class="obras">
+          <li>
+            <img alt="Obra1" src="https://uploads4.wikiart.org/images/tarsila-do-amaral/abaporu-1928(1).jpg!Large.jpg"
+              class="obra-img" />
+            <p>Nome da Obra (data)</p>
+            <p>Nome do Artista</p>
+          </li>
+          <li>
+            <img alt="Obra1"
+              src="https://uploads0.wikiart.org/00210/images/pedro-americo/independence-of-brazil-1888.jpg!Large.jpg"
+              class="obra-img" />
+            <p>Nome da Obra (data)</p>
+            <p>Nome do Artista</p>
+          </li>
+        </ul>
+        <section class="exposicao-button">
+          <p>Parabéns, você terminou a exposição!</p>
+          <p>Seu ticket está sendo criado...</p>
+          <button class="button-pag-ticket">Clique aqui para retirar</button>
         </section>
+      </main>
+    </section>
 
-        <!-- <section class="tela-bilhete-prateado">
-          <main>
-            <div class="tela-bilhete-prateado">
-              <img src="./images/bilhete-prateado.png" alt="bilhete-prateado" class="bilhete-img" />
-              <p class="texto-bilhete-prateado">Agora vamos atrás do bilhete <b class="dourado">dourado!</b></p>
-              <p class="texto-bilhete-prateado-italico"><i><u>Não esqueça</u> de printar seu ticket antes de seguir!</i></p>
-              <button class="button-iniciar-quiz"><b>INICIAR QUIZ</b></button>
-            </div>
-          </main>
-        </section>
+    <section class="tela-bilhete-prateado">
+      <main>
+        <div class="tela-bilhete-prateado">
+          <img src="./images/bilhete-prateado.png" alt="bilhete-prateado" class="bilhete-img" />
+          <p class="texto-bilhete-prateado">Agora vamos atrás do bilhete <b class="dourado">dourado!</b></p>
+          <p class="texto-bilhete-prateado-italico"><i><u>Não esqueça</u> de printar seu ticket antes de seguir!</i></p>
+          <button class="button-iniciar-quiz" id="iniciarQuiz"><b>INICIAR QUIZ</b></button>
+        </div>
+      </main>
+    </section>
 
-        <section class="tela-bilhete-dourado">
-          <main>
-            <div class="tela-bilhete-dourado">
-              <p class="texto-bilhete-dourado"><b>VOCÊ CONCLUIU A TOUR!</b></p>
-              <p class="texto-bilhete-dourado">Printe seu segundo bilhete e compartilhe a experiência com seus amigos!</p>
-              <p class="texto-bilhete-dourado"><i>Não esqueça de convidá-los para jogar também!</i></p>
-              <img src="./images/bilhete-dourado.png" alt="bilhete-dourado" class="bilhete-img" />
-              <p class="bilhete-dourado-volte-sempre"><b>Volte Sempre!</b></p>
-            </div>
-          </main>
-        </section> -->
+    <section class="tela-quiz">
+      <main>
+        <div id=div1></div>
+        <div id=div2></div>
+        <div id=div3></div>
+        <div id=div4></div>
+        <div id=div5></div>
+        <p id="acertoOuErro"></p>
+      </main>
+    </section>
 
-        <section class="tela-quiz">
-          <main>
-            <p class="numeracao-perguntas">Pergunta X de 4</p>
-            <p class="quiz-pergunta">A pergunta vai ser inserida nesse parágrafo</p>
-            <img src="https://uploads2.wikiart.org/images/candido-portinari/scarecrow-1959.jpg" alt="imagem-quiz" class="quiz-img" />
-            
-            <ul class="opcoes-resposta">
-              <li class="opcao-a">
-                <input type="checkbox" id="opcao-a" name="opcao-a">
-                <label for="opcao-a">Primeira Opção</label>
-              </li>
-              <li class="opcao-b">
-                <input type="checkbox" id="opcao-b" name="opcao-b">
-                <label for="opcao-b">Segunda Opção</label>
-              </li>
-              <li class="opcao-c">
-                <input type="checkbox" id="opcao-c" name="opcao-c">
-                <label for="opcao-c">Terceira Opção</label>
-              </li>
-              <li class="opcao-d">
-                <input type="checkbox" id="opcao-d" name="opcao-d">
-                <label for="opcao-d">Quarta Opção</label>
-              </li>
-            </ul>
+    <section class="tela-bilhete-dourado">
+      <main>
+        <div class="tela-bilhete-dourado">
+          <p class="texto-bilhete-dourado"><b>VOCÊ CONCLUIU A TOUR!</b></p>
+          <p class="texto-bilhete-dourado">Printe seu segundo bilhete e compartilhe a experiência com seus amigos!</p>
+          <p class="texto-bilhete-dourado"><i>Não esqueça de convidá-los para jogar também!</i></p>
+          <img src="./images/bilhete-dourado.png" alt="bilhete-dourado" class="bilhete-img" />
+          <p class="bilhete-dourado-volte-sempre"><b>Volte Sempre!</b></p>
+        </div>
+      </main>
+    </section>
 
-            <div class="tente-novamente">
-              <p class="erro">Ainda não foi dessa vez...</p>
-              <button class="tente-novamente-button">Tente novamente!</button>
-            </div>
-            
-            <div class="acertou">
-              <p class="texto-voce-acertou">Você acertou!</p>
-            </div>
+    <footer class="footer">
+      <p>Projeto desenvolvido por: Ana Clara, Camila, Karine, Mairã, Priscila e Rebeca.</p>
+    </footer>
+  </div>
 
-            <button class="prox-pergunta">Próxima pergunta</button>
-          </main>
-        </section>
+  <script src="main.js" type="module"></script>
+  <script src="quiz.js" type="module"></script>
 
-        <footer class="footer">
-          <p>Projeto desenvolvido por: Ana Clara, Camila, Karine, Mairã, Priscila e Rebeca.</p>
-        </footer>
-    </div>
+</body>
 
-    <script src="main.js" type="module"></script>
-  
-  </body>
 </html>
