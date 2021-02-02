@@ -105,7 +105,7 @@ function quartaPergunta() {
 	<img src="${getImageURLObrasEscolhidas("Independence or Death! (The Ipiranga Shout)")}" alt="Independência ou Morte!" class='obra-quiz-img'>
 	<div class="btnsResposta">
 		<button id='bt1' class='bt1' value="correto">Rio Ipiranga</button>
-		<button id='bt2' class='bt2' value="errado">Rio Tiete</button>
+		<button id='bt2' class='bt2' value="errado">Rio Tietê</button>
 		<button id='bt3' class='bt3' value="errado">Rio Grande do Sul</button>
 		<button id='bt4' class='bt4' value="errado">Rio Pinheiros</button>
 	</div>
