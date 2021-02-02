@@ -1,5 +1,4 @@
 .tela-inicial {
-    display: none;
     width: 100%;
     height: 100vh;
     flex: 1;
@@ -10,10 +9,6 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-.sair {
-    margin: 0 15px;
 }
 
 .form-pag-inicial {
