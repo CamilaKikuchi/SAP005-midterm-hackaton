@@ -28,7 +28,7 @@ O Museu Virtual foi uma aplicação criada pensando em trazer para as crianças 
 Também é uma ótima oportunidade para professores apresentarem a seus alunos, de forma didática, um pouco de nossa herança cultural. De igual modo, é uma ferramenta para os pais apresentarem a seus filhos um pouco das obras de arte, sem a necessidade de visitar presencialmente museus, nestes tempos de pandemia.
 
 
-![gifdoprojeto](.gif)
+![gifdoprojeto](src/images/museu-virtual.gif)
 
 ### 1.1 Como utilizar a aplicação :pencil2:
 
@@ -101,7 +101,8 @@ O projeto foi desenvolvido utilizando o método _mobile first_. A seguir as tela
 :pushpin: Colaboração pelo Github<br>
 :pushpin: Design Sprint<br>
 :pushpin: Experiência do Usuário (UX)<br>
-:pushpin: MVP (Mínimo Produto Viável)
+:pushpin: MVP (Mínimo Produto Viável)<br>
+:pushpin: Consumo de API
 
 #### Soft Skills
 
