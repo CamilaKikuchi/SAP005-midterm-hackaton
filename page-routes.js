@@ -11,12 +11,25 @@ const pagBilheteDourado = document.getElementById("tela-bilhete-dourado");
 const buttonToQuizPage = document.getElementById("button-iniciar-quiz");
 const sairButton = document.getElementById("sair-button");
 const voltarButton = document.getElementById("voltar-button");
+const logoButton = document.getElementById("logo-button");
 const msgErro = document.createElement("p");
 
 sairButton.addEventListener('click', () => {
     pagInicial.classList.remove('none');
     pagBilhetePrateado.classList.add('none');
     pagQuiz.classList.add('none');
+    pagBilheteDourado.classList.add('none');
+    sairButton.classList.add('none');
+    voltarButton.classList.add('none');
+    nameInput.value = "";
+    msgErro.innerText = "";
+});
+
+logoButton.addEventListener('click', () => {
+    pagInicial.classList.remove('none');
+    pagBilhetePrateado.classList.add('none');
+    pagQuiz.classList.add('none');
+    pagExposicao.classList.add('none');
     pagBilheteDourado.classList.add('none');
     sairButton.classList.add('none');
     voltarButton.classList.add('none');

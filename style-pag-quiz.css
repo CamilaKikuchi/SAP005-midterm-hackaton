@@ -88,8 +88,8 @@
 }
 
 .btn-tryagain {
-    background-color: #5d6c01;
-    border: 1px solid #5d6c01;
+    background-color: #BC3824;
+    border: 1px solid #BC3824;
     font-size: 15px;
 }
 
@@ -120,6 +120,16 @@
 .button-orange {
     background-color: #ff8030;
     border: 3px solid #ff8030;
+}
+
+.button-red {
+    background-color: #BC3824;
+    border: 3px solid #BC3824;
+}
+
+.button-green {
+    background-color: #5d6c01;
+    border: 3px solid #5d6c01;
 }
 
 .btn-lastquestion {
