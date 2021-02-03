@@ -132,31 +132,32 @@ function quartaPergunta() {
 //Função carregar botões da página
 function carregarBotoes() {
 	let resposta;
+	let targetBtn;
 
 	document.getElementById('btnAgain').disabled = true;
 
 	document.getElementById('bt1').addEventListener('click', function(event) {
-		event.target.classList.add("button-orange");
+		targetBtn = event.target;
 		resposta = document.getElementById('bt1').value;
-		verificaResposta(resposta);
+		verificaResposta(resposta, targetBtn);
 	});
 
 	document.getElementById('bt2').addEventListener('click', function(event) {
-		event.target.classList.add("button-orange");
+		targetBtn = event.target;
 		resposta = document.getElementById('bt2').value;
-		verificaResposta(resposta);
+		verificaResposta(resposta, targetBtn);
 	});
 
 	document.getElementById('bt3').addEventListener('click', function(event) {
-		event.target.classList.add("button-orange");
+		targetBtn = event.target;
 		resposta = document.getElementById('bt3').value;
-		verificaResposta(resposta);
+		verificaResposta(resposta, targetBtn);
 	});
 
 	document.getElementById('bt4').addEventListener('click', function(event) {
-		event.target.classList.add("button-orange");
+		targetBtn = event.target;
 		resposta = document.getElementById('bt4').value;
-		verificaResposta(resposta);
+		verificaResposta(resposta, targetBtn);
 	});
 
 	document.getElementById('btnAgain').addEventListener('click', function() {
@@ -164,10 +165,10 @@ function carregarBotoes() {
 		const bt2 = document.getElementById('bt2');
 		const bt3 = document.getElementById('bt3');
 		const bt4 = document.getElementById('bt4');
-		bt1.classList.remove("button-orange");
-		bt2.classList.remove("button-orange");
-		bt3.classList.remove("button-orange");
-		bt4.classList.remove("button-orange");
+		bt1.classList.remove("button-red");
+		bt2.classList.remove("button-red");
+		bt3.classList.remove("button-red");
+		bt4.classList.remove("button-red");
 		habilitaBotoes();
 	});
 }
@@ -182,8 +183,9 @@ function habilitaBotoes() {
 }
 
 //Função que verifica se resposta está correta ou não
-function verificaResposta(resposta) {
+function verificaResposta(resposta, btnColor) {
 	if (resposta == 'correto') {
+		btnColor.classList.add('button-green');
 		const rightQuestion = document.getElementById('acertoOuErro');
 		rightQuestion.classList.remove('none');
 		rightQuestion.classList.add('green-text')
@@ -194,6 +196,7 @@ function verificaResposta(resposta) {
 		document.getElementById('bt3').disabled = true;
 		document.getElementById('bt4').disabled = true;
 	} else {
+		btnColor.classList.add('button-red');
 		const notThisYet = document.getElementById('acertoOuErro');
 		notThisYet.classList.remove('none');
 		notThisYet.innerHTML = 'Humm, a resposta ainda não é essa!';
