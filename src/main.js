@@ -31,7 +31,7 @@ function frase(nomeDaObra) {
             frase = "Você já jogou futebol na terra?";
             break;
         case "Independence or Death! (The Ipiranga Shout)":
-            frase = "Você sabia que esse quadro retrata o momento da Independência do Brasil? (Boatos que tinha meia dúzia de pessoas montadas em burrinhos)";
+            frase = "Você sabia que esse quadro NÃO retrata o momento da Independência do Brasil? (Boatos que tinha meia dúzia de pessoas montadas em burrinhos)";
             break;
         case "A Cuca":
             frase = "Que bicho é esse?";

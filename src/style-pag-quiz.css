@@ -135,3 +135,23 @@
 .btn-lastquestion {
     margin-bottom: 65px;
 }
+
+@media only screen and (min-device-width: 1200px){
+    .obra-quiz-img {
+        width: 25%;
+        border: ridge 20px rgb(255, 255, 255);
+        margin-bottom: 25px;
+    }
+    .pergunta {
+        background-image:url("./images/nuvem.png");
+        background-size: 50%;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:0;
+    }
+}
